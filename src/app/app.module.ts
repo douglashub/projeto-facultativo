@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material/material.module';
 import { ScreenComponent } from './components/screen/screen.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,7 @@ import { ScreenComponent } from './components/screen/screen.component';
     HeaderComponent,
     ScreenComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MaterialModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule, RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })

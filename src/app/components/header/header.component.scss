@@ -2,5 +2,18 @@
 
 .header-container {
   background: $primary;
-  padding: 1rem;
+  padding: 0.75rem;
+  color: $white;
+  min-height: 64px;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+
+  .profile-menu {
+    cursor: pointer;
+    transition: $transition-fast;
+    position: relative;
+
+    &:hover {
+      color: darken($white, 20);
+    }
+  }
 }

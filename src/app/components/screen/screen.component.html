@@ -4,6 +4,6 @@
   <div class="cell auto">
     <router-outlet></router-outlet>
   </div>
-  <hfmh-bottom-menu class="cell shrink"></hfmh-bottom-menu>
+  <hfmh-bottom-menu class="cell shrink" [hidden]="!isLoggedIn()"></hfmh-bottom-menu>
   <hfmh-bottom-bar class="cell shrink"></hfmh-bottom-bar>
 </div>

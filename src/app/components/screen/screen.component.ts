@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/services/auth/auth.service';
 
 @Component({
   selector: 'hfmh-screen',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./screen.component.scss']
 })
 export class ScreenComponent implements OnInit {
+  constructor(private authService: AuthService) {}
 
-  constructor() { }
-
-  ngOnInit() {
+  isLoggedIn(): boolean {
+    return this.authService.isLoggedIn();
   }
 
+  ngOnInit() {}
 }

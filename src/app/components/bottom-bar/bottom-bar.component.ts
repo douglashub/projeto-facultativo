@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'hfmh-bottom-bar',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bottom-bar.component.scss']
 })
 export class BottomBarComponent implements OnInit {
+  constructor(private location: Location) {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  backButton(): void {
+    this.location.back();
   }
-
 }
