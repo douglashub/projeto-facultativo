@@ -2,9 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
 
+Basic prototype front-end app for CSC318. DB mimiced using localStorage. Express used to host on heroku.
+
+## Live server
+
+Hosted on [Heroku](https://hands-for-mental-health.herokuapp.com/)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+Make sure you `npm install` before running.
 
 ## Code scaffolding
 
