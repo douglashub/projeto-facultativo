@@ -6,6 +6,11 @@
 
 .buttom-menu-item {
   color: $white;
+  transition: $transition-fast;
+
+  &.selected {
+    color: $secondary-light;
+  }
 
   button {
     width: 100%;

@@ -1,5 +1,5 @@
 <div class="bottom-menu-container grid-x align-middle">
-  <div class="buttom-menu-item cell auto">
+  <div class="buttom-menu-item cell auto" [ngClass]="{ selected: hasPath('home') }">
     <button mat-button [routerLink]="['home']">
       <div class="grid-y align-center align-middle">
         <mat-icon>home</mat-icon>
@@ -7,7 +7,7 @@
       </div>
     </button>
   </div>
-  <div class="buttom-menu-item cell auto">
+  <div class="buttom-menu-item cell auto" [ngClass]="{ selected: hasPath('mood') }">
     <button mat-button [routerLink]="['mood']">
       <div class="grid-y align-center align-middle">
         <mat-icon>calendar_today</mat-icon>
@@ -15,7 +15,7 @@
       </div>
     </button>
   </div>
-  <div class="buttom-menu-item cell auto">
+  <div class="buttom-menu-item cell auto" [ngClass]="{ selected: hasPath('professionals') }">
     <button mat-button [routerLink]="['professionals']">
       <div class="grid-y align-center align-middle">
         <mat-icon>supervised_user_circle</mat-icon>

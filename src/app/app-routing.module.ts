@@ -7,27 +7,32 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: './pages/home/home.module#HomeModule',
-    canActivate: [LoggedInGuard]
+    canActivate: [LoggedInGuard],
+    data: { title: 'home' }
   },
   {
     path: 'auth',
     loadChildren: './pages/auth/auth.module#AuthModule',
-    canActivate: [NotLoggedInGuard]
+    canActivate: [NotLoggedInGuard],
+    data: { title: 'auth' }
   },
   {
     path: 'professionals',
     loadChildren: './pages/professionals/professionals.module#ProfessionalsModule',
-    canActivate: [LoggedInGuard]
+    canActivate: [LoggedInGuard],
+    data: { title: 'professionals' }
   },
   {
     path: 'mood',
     loadChildren: './pages/mood/mood.module#MoodModule',
-    canActivate: [LoggedInGuard]
+    canActivate: [LoggedInGuard],
+    data: { title: 'mood' }
   },
   {
     path: 'profile',
     loadChildren: './pages/profile/profile.module#ProfileModule',
-    canActivate: [LoggedInGuard]
+    canActivate: [LoggedInGuard],
+    data: { title: 'profile' }
   }
 ];
 
