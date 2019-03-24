@@ -1,0 +1,25 @@
+<div class="add-mood-dialog-container grid-y align-center align-middle">
+  <h5>Add a mood for today</h5>
+
+  <form (ngSubmit)="close(moodForm)" [formGroup]="moodForm">
+    <mat-form-field appearance="outline" class="margin-top-1">
+      <mat-label>Mood</mat-label>
+      <mat-select formControlName="mood" required>
+        <mat-option value="Good">Good</mat-option>
+        <mat-option value="Bad">Bad</mat-option>
+        <mat-option value="Average">Average</mat-option>
+      </mat-select>
+      <mat-error *ngIf="moodForm.get('mood').invalid">{{ getErrorMessage('mood') }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="margin-top-1">
+      <mat-label>Notes</mat-label>
+      <textarea matInput type="textfield" formControlName="notes"></textarea>
+      <!-- <mat-icon matSuffix>person</mat-icon> -->
+    </mat-form-field>
+
+    <button mat-flat-button type="submit" color="primary" class="margin-bottom-1 margin-top-1">
+      Submit
+    </button>
+  </form>
+</div>
