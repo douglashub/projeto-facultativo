@@ -1,0 +1,27 @@
+@import 'variables';
+
+.professionals-container {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  overflow: auto;
+
+  .professional-card {
+    width: 100%;
+    transition: $transition-fast;
+    cursor: pointer;
+
+    &:hover {
+      background: lighten($secondary-light, 25);
+      box-shadow: $boxshadow-0;
+    }
+
+    mat-icon {
+      font-size: 30px;
+    }
+  }
+
+  mat-form-field {
+    width: 100%;
+  }
+}
