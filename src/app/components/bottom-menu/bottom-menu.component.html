@@ -1,5 +1,13 @@
 <div class="bottom-menu-container grid-x align-middle">
   <div class="buttom-menu-item cell auto">
+    <button mat-button [routerLink]="['home']">
+      <div class="grid-y align-center align-middle">
+        <mat-icon>home</mat-icon>
+        <span class="buttom-menu-item-text">Home</span>
+      </div>
+    </button>
+  </div>
+  <div class="buttom-menu-item cell auto">
     <button mat-button [routerLink]="['mood']">
       <div class="grid-y align-center align-middle">
         <mat-icon>calendar_today</mat-icon>
