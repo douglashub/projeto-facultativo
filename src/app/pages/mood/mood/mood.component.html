@@ -1,3 +1,18 @@
-<p>
-  mood works!
-</p>
+<div class="mood-container grid-y align-middle">
+  <div class="mood-list-container">
+    <mat-card class="mood-card margin-bottom-1" *ngFor="let mood of moods">
+      <mat-card-header>
+        <mat-card-title>Mood: {{ mood?.mood }}</mat-card-title>
+        <mat-card-subtitle>Date: {{ mood?.date }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content> Notes: {{ mood?.notes }} </mat-card-content>
+      <!-- <mat-card-actions>
+            <button mat-button>Ok</button>
+          </mat-card-actions> -->
+    </mat-card>
+  </div>
+
+  <div class="add-mood-button">
+    <button mat-fab (click)="openAddMoodDialog()"><mat-icon>add</mat-icon></button>
+  </div>
+</div>

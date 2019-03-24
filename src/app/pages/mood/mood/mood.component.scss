@@ -1,0 +1,31 @@
+@import 'variables';
+
+.mood-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  .mood-list-container {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .add-mood-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .mood-card {
+    width: 100%;
+    transition: $transition-fast;
+    cursor: pointer;
+
+    &:hover {
+      background: lighten($secondary-light, 25);
+      box-shadow: $boxshadow-0;
+    }
+  }
+}
