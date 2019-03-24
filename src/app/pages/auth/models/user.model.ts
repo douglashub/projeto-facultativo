@@ -6,10 +6,10 @@ export interface UserLoginModel {
 export interface UserModel {
   username: string;
   password: string;
-  gender: UserGender;
+  gender: Gender;
 }
 
-export enum UserGender {
+export enum Gender {
   MALE = 'Male',
   FEMALE = 'Female',
   OTHER = 'Other'

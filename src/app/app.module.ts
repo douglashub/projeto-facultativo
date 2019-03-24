@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material/material.module';
 import { ScreenComponent } from './components/screen/screen.component';
 import { RouterModule } from '@angular/router';
+import { PipesModule } from './pipes/pipes.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,14 @@ import { RouterModule } from '@angular/router';
     HeaderComponent,
     ScreenComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule, RouterModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    RouterModule,
+    PipesModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

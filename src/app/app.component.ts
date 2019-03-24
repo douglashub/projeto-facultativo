@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     if (this.authService.isLoggedIn()) {
-      this.router.navigate(['home']);
+      this.router.navigate(['professionals']);
     } else {
       this.router.navigate(['auth']);
     }

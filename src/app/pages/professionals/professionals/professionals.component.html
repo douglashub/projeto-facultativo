@@ -1,3 +1,29 @@
-<p>
-  professionals works!
-</p>
+<div class="professionals-container grid-y align-middle">
+  <!-- Search -->
+  <mat-form-field appearance="outline" class="margin-bottom-1">
+    <mat-label>Search for professionals</mat-label>
+    <input matInput placeholder="Search" #searchInput />
+    <mat-icon matSuffix>search</mat-icon>
+    <!-- <mat-hint>Hint</mat-hint> -->
+  </mat-form-field>
+
+  <mat-card
+    tabindex="0"
+    class="professional-card margin-bottom-1"
+    *ngFor="let professional of (professionals | filter: searchInput.value)"
+    [routerLink]="['profile', professional.id]"
+  >
+    <mat-card-header>
+      <div mat-card-avatar>
+        <mat-icon>person</mat-icon>
+      </div>
+      <mat-card-title>{{ professional?.name }}</mat-card-title>
+      <mat-card-subtitle>{{ professional?.profession }}</mat-card-subtitle>
+      <mat-card-subtitle>{{ professional?.location }}</mat-card-subtitle>
+    </mat-card-header>
+    <!-- <mat-card-content> </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Ok</button>
+    </mat-card-actions> -->
+  </mat-card>
+</div>
