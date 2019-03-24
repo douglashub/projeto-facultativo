@@ -9,6 +9,7 @@ import { BottomMenuComponent } from './components/bottom-menu/bottom-menu.compon
 import { HeaderComponent } from './components/header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material/material.module';
+import { ScreenComponent } from './components/screen/screen.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MaterialModule } from './material/material.module';
     TopBarComponent,
     BottomBarComponent,
     BottomMenuComponent,
-    HeaderComponent
+    HeaderComponent,
+    ScreenComponent
   ],
   imports: [
     BrowserModule,

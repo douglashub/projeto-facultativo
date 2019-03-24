@@ -1,0 +1,30 @@
+@import 'variables';
+
+.bottom-menu-container {
+  background: $primary-dark;
+}
+
+.buttom-menu-item {
+  color: lighten($secondary-light, 20);
+
+  button {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0;
+
+    .grid-y {
+      line-height: 1rem;
+    }
+  }
+
+  .buttom-menu-item-text {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+  }
+}
+
+mat-icon {
+  font-size: 20px;
+  padding: 0;
+}
